@@ -1,0 +1,21 @@
+{
+  "name": "sleak-check-audit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page + checkout backend for Sleak Check Audit",
+  "main": "server-mock.js",
+  "scripts": {
+    "start": "node server-mock.js",
+    "dev": "NODE_ENV=development node server-mock.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "cors": "^2.8.5",
+    "express-rate-limit": "^7.4.0",
+    "stripe": "^16.0.0"
+  }
+}
