@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QV98MCD0NX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QV98MCD0NX');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================== -->
+  <!-- SEO — edit title, description and URLs to match your domain    -->
+  <!-- ============================================================== -->
+  <title>Website Security Audit for Small Businesses | Sleak Check</title>
+  <meta name="description" content="Plain-English website security &amp; privacy audit for small businesses. We find vulnerabilities and GDPR risks on your site and show how to fix them. $300, 24–48 hrs." />
+  <link rel="canonical" href="https://sleakcheckaudit.co.uk/" />
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:title" content="Sleak Check Audit — Website Security &amp; Privacy Audit" />
+  <meta property="og:description" content="Find out if your website is exposed before hackers do. Plain-English report + developer fix checklist. $300 one-time." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sleakcheckaudit.co.uk/" />
+  <meta property="og:image" content="https://sleakcheckaudit.co.uk/og-image.png" />
+  <meta property="og:image:alt" content="Sleak Check Audit — website security and privacy audit for small businesses" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sleak Check Audit — Website Security &amp; Privacy Audit" />
+  <meta name="twitter:description" content="Find out if your website is exposed before hackers do. Plain-English report + fix checklist. $300 one-time." />
+  <meta name="twitter:image" content="https://sleakcheckaudit.co.uk/og-image.png" />
+
+  <!-- Favicons (SVG for modern browsers, PNG/ICO fallbacks, Apple + manifest) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 38'%3E%3Cpath d='M17 1 32 6v12c0 9-6.4 15.4-15 19C8.4 33.4 2 27 2 18V6L17 1Z' fill='%231F3A5F'/%3E%3Crect x='8' y='16.5' width='18' height='4' rx='1' fill='%23C0392B'/%3E%3Cpath d='M11 25h12M11 11h12' stroke='%23fff' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#1F3A5F" />
+
+  <!-- ============================================================== -->
+  <!-- ANALYTICS (optional, privacy-friendly & cookieless).           -->
+  <!-- Uncomment and set your domain to measure your funnel. Plausible -->
+  <!-- needs no cookie banner; if you switch to GA4, add consent.      -->
+  <!-- <script defer data-domain="sleakcheckaudit.co.uk" src="https://plausible.io/js/script.outbound-links.js"></script> -->
+  <!-- ============================================================== -->
+
+  <!-- ============================================================== -->
+  <!-- FONTS — Poppins (headings) + Inter (body)                      -->
+  <!-- ============================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Note: the active checkout redirects to a Stripe Payment Link (a normal
+       link), so Stripe.js is not needed here and has been removed for speed.
+       If you switch back to the backend Checkout Session flow in app.js,
+       re-add: <script src="https://js.stripe.com/v3/"></script> and restore
+       the stripe origins in the server CSP. -->
+
+  <!-- Organisation identity (EDIT the [BRACKETED] fields with real details) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Sleak Check Audit",
+    "legalName": "[LEGAL COMPANY NAME]",
+    "url": "https://sleakcheckaudit.co.uk/",
+    "logo": "https://sleakcheckaudit.co.uk/og-image.png",
+    "email": "support@sleakcheckaudit.co.uk",
+    "description": "Plain-English website security and privacy audits for small businesses.",
+    "areaServed": "Worldwide",
+    "sameAs": ["[LINKEDIN URL]", "[X/TWITTER URL]"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Sleak Check Audit",
+    "url": "https://sleakcheckaudit.co.uk/",
+    "publisher": { "@type": "Organization", "name": "Sleak Check Audit" }
+  }
+  </script>
+
+  <!-- Structured data: Product + FAQ (helps search engines show rich results) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Website Security & Privacy Audit",
+    "image": ["https://sleakcheckaudit.co.uk/og-image.png"],
+    "brand": { "@type": "Brand", "name": "Sleak Check Audit" },
+    "description": "A non-technical website security and privacy audit: plain-English report, GDPR/CCPA privacy check, developer fix checklist and a 0–100 security score, delivered in 24–48 hours.",
+    "offers": {
+      "@type": "Offer",
+      "price": "300.00",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://sleakcheckaudit.co.uk/#pricing",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": { "@type": "MonetaryAmount", "value": "0", "currency": "USD" },
+        "shippingDestination": { "@type": "DefinedRegion", "addressCountry": "GB" },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 0, "unitCode": "DAY" },
+          "transitTime": { "@type": "QuantitativeValue", "minValue": 1, "maxValue": 2, "unitCode": "DAY" }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "applicableCountry": "GB",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 14,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      }
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "What is a website security audit?", "acceptedAnswer": { "@type": "Answer", "text": "A website security audit is a check of how your site is set up — its security headers, HTTPS configuration, privacy and GDPR settings, and the common vulnerabilities attackers look for. We run the checks, explain what we found in plain English, rate it by severity, and give you a fix checklist." } },
+      { "@type": "Question", "name": "How do I know if my website is secure?", "acceptedAnswer": { "@type": "Answer", "text": "Usually you can't tell from the outside. Issues like a missing Content Security Policy, weak HTTPS or a GDPR privacy gap are invisible to visitors but easy for automated bots to find. A security audit surfaces them and gives you a 0–100 score." } },
+      { "@type": "Question", "name": "Do I need any technical knowledge?", "acceptedAnswer": { "@type": "Answer", "text": "None at all. The report is written for business owners in plain English, with a separate checklist you can hand to your developer." } },
+      { "@type": "Question", "name": "How long does it take?", "acceptedAnswer": { "@type": "Answer", "text": "Your full report lands in your inbox within 24–48 hours of payment." } },
+      { "@type": "Question", "name": "Will the scan affect my live website?", "acceptedAnswer": { "@type": "Answer", "text": "No. The checks are non-intrusive and run from the outside, the same way a normal visitor's browser sees your site." } },
+      { "@type": "Question", "name": "Is this really a one-time payment?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — $300, paid once. There is no subscription and no auto-renewal." } },
+      { "@type": "Question", "name": "What if my site turns out to be fine?", "acceptedAnswer": { "@type": "Answer", "text": "You get a clean report and a high security score in writing — useful reassurance and proof you can show customers or partners." } }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ============================================================== */
+    /* DESIGN TOKENS — brand colours & sizing live here (edit once)   */
+    /* ============================================================== */
+    :root {
+      /* Brand palette (STRICT) */
+      --navy:       #1F3A5F;   /* primary brand navy            */
+      --navy-deep:  #16293f;   /* darker navy for depth/footer  */
+      --navy-tint:  #eaf0f7;   /* very light navy wash          */
+      --red:        #C0392B;   /* CTA / accent red              */
+      --red-deep:   #a23123;   /* red hover                     */
+
+      --text:       #222222;   /* primary text                  */
+      --muted:      #5b6573;   /* secondary text                */
+      --bg:         #ffffff;   /* page background               */
+      --surface:    #f5f7fa;   /* light grey section background */
+      --card:       #ffffff;   /* card background               */
+      --border:     #e4e8ef;   /* hairline borders              */
+
+      /* Type */
+      --font-display: "Poppins", system-ui, "Segoe UI", sans-serif;
+      --font-body:    "Inter", system-ui, -apple-system, sans-serif;
+
+      /* Shape */
+      --radius:    12px;
+      --radius-sm: 8px;
+      --maxw:      1080px;
+      --shadow:    0 1px 2px rgba(31,58,95,.05), 0 14px 38px rgba(31,58,95,.08);
+      --shadow-sm: 0 1px 2px rgba(31,58,95,.06), 0 6px 18px rgba(31,58,95,.06);
+    }
+
+    /* ============================================================== */
+    /* BASE / RESET                                                   */
+    /* ============================================================== */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font-family: var(--font-body); line-height: 1.65;
+      -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    }
+    h1, h2, h3, h4 { font-family: var(--font-display); color: var(--navy); line-height: 1.18; letter-spacing: -.02em; margin: 0 0 .5em; }
+    p { margin: 0 0 1rem; }
+    a { color: var(--red); text-decoration: none; }
+    ul { margin: 0; padding: 0; }
+
+    .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 22px; }
+    .section { padding: 84px 0; }
+    .section--surface { background: var(--surface); }
+    .section--navy { background: var(--navy); color: #dfe7f1; }
+    .section--navy h2 { color: #fff; }
+
+    /* Eyebrow label */
+    .eyebrow {
+      display: inline-block; font-weight: 600; font-size: .78rem; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--red); margin: 0 0 12px;
+    }
+    .section--navy .eyebrow { color: #ff8a7a; }
+    .head { max-width: 640px; margin: 0 auto 52px; text-align: center; }
+    .head h2 { font-size: clamp(1.7rem, 4vw, 2.4rem); }
+    .head p { font-size: 1.06rem; color: var(--muted); }
+    .section--navy .head p { color: #b9c6d8; }
+
+    /* ============================================================== */
+    /* BUTTONS                                                        */
+    /* ============================================================== */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+      font-family: var(--font-body); font-weight: 600; font-size: 1rem; line-height: 1;
+      padding: 15px 26px; border-radius: var(--radius-sm); border: 1.5px solid transparent;
+      cursor: pointer; transition: transform .18s ease, background .18s ease, box-shadow .18s ease, color .18s ease;
+    }
+    .btn--primary { background: var(--red); color: #fff; box-shadow: 0 8px 22px rgba(192,57,43,.28); }
+    .btn--primary:hover { background: var(--red-deep); transform: translateY(-2px); }
+    .btn--primary:disabled { opacity: .7; cursor: default; transform: none; }
+    .btn--ghost { background: transparent; color: var(--navy); border-color: var(--border); }
+    .btn--ghost:hover { border-color: var(--navy); transform: translateY(-2px); }
+    .btn--light { background: #fff; color: var(--navy); }
+    .btn--light:hover { transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+    .btn--lg { padding: 17px 30px; font-size: 1.05rem; }
+    .btn--block { width: 100%; }
+
+    /* ============================================================== */
+    /* LOGO (inline SVG badge — swap for your own image if you like)  */
+    /* ============================================================== */
+    .logo { display: inline-flex; align-items: center; gap: 11px; }
+    .logo__name { font-family: var(--font-display); font-weight: 700; font-size: 1.12rem; color: var(--navy); letter-spacing: -.01em; }
+    .logo__name small { display: block; font-size: .62rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+
+    /* ============================================================== */
+    /* STICKY HEADER                                                  */
+    /* ============================================================== */
+    .header {
+      position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.85);
+      backdrop-filter: saturate(180%) blur(12px);
+      border-bottom: 1px solid transparent; transition: border-color .3s, box-shadow .3s;
+    }
+    .header.scrolled { border-bottom-color: var(--border); box-shadow: 0 4px 22px rgba(31,58,95,.06); }
+    .header__inner { display: flex; align-items: center; justify-content: space-between; height: 74px; }
+    .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+    .nav-links a:not(.btn) { color: var(--text); font-weight: 500; font-size: .96rem; }
+    .nav-links a:not(.btn):hover { color: var(--navy); }
+    .nav-toggle { display: none; background: none; border: 0; cursor: pointer; width: 42px; height: 42px; padding: 9px; }
+    .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--navy); margin: 4px auto; transition: .25s; }
+
+    /* ============================================================== */
+    /* 1 · HERO                                                       */
+    /* ============================================================== */
+    .hero { position: relative; overflow: hidden; padding: 92px 0 78px; text-align: center; }
+    .hero::before {
+      content: ""; position: absolute; inset: -40% -10% auto -10%; height: 560px; z-index: -1;
+      background: radial-gradient(55% 60% at 50% 0%, rgba(31,58,95,.10), transparent 65%);
+    }
+    .hero__badge {
+      display: inline-flex; align-items: center; gap: 8px; margin-bottom: 22px;
+      padding: 7px 14px; border-radius: 999px; background: var(--navy-tint);
+      color: var(--navy); font-size: .82rem; font-weight: 600;
+    }
+    .hero h1 { font-size: clamp(2.1rem, 5.4vw, 3.4rem); max-width: 800px; margin: 0 auto 18px; }
+    .hero h1 em { font-style: normal; color: var(--red); }
+    .hero p.lede { font-size: 1.18rem; color: var(--muted); max-width: 620px; margin: 0 auto 30px; }
+    .hero__actions { display: flex; flex-wrap: wrap; gap: 13px; justify-content: center; }
+    .hero__meta { margin-top: 24px; font-size: .9rem; color: var(--muted); }
+    .hero__meta strong { color: var(--navy); }
+
+    /* ============================================================== */
+    /* 2 · TRUST BAR                                                  */
+    /* ============================================================== */
+    .trust { padding: 30px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--surface); }
+    .trust p { text-align: center; font-size: .82rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 18px; }
+    .trust__logos { display: flex; flex-wrap: wrap; gap: 16px 40px; justify-content: center; align-items: center; }
+    .trust__logo { display: inline-flex; align-items: center; gap: 8px; color: var(--navy); font-family: var(--font-display); font-weight: 600; font-size: 1rem; }
+    .trust__logo svg { color: var(--red); }
+    /* Guarantee badge on the pricing card */
+    .guarantee { display: flex; gap: 11px; align-items: flex-start; margin-top: 22px; padding-top: 20px; border-top: 1px solid var(--border); font-size: .92rem; color: var(--text); }
+    .guarantee svg { flex: none; color: var(--red); margin-top: 1px; }
+    /* Visible keyboard focus for accessibility */
+    a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible,
+    .faq__q:focus-visible { outline: 3px solid rgba(31,58,95,.45); outline-offset: 2px; border-radius: 4px; }
+    .btn:focus-visible { outline-color: rgba(192,57,43,.5); }
+
+    /* ============================================================== */
+    /* 3 · PROBLEM  +  4 · SOLUTION                                   */
+    /* ============================================================== */
+    .split { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+    .split h2 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); }
+    .risk-list { list-style: none; display: grid; gap: 14px; margin-top: 8px; }
+    .risk-list li { display: flex; gap: 13px; align-items: flex-start; font-size: 1.02rem; }
+    .risk-list .dot { flex: none; width: 26px; height: 26px; border-radius: 7px; display: grid; place-items: center; background: rgba(192,57,43,.1); color: var(--red); margin-top: 2px; }
+    .solution .risk-list .dot { background: rgba(31,58,95,.1); color: var(--navy); }
+
+    /* ============================================================== */
+    /* 5 · FEATURES / WHAT YOU GET                                    */
+    /* ============================================================== */
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .card {
+      padding: 30px 26px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+    .card:hover { transform: translateY(-6px); box-shadow: var(--shadow); border-color: transparent; }
+    .card__icon { width: 46px; height: 46px; border-radius: 11px; display: grid; place-items: center; background: var(--navy-tint); color: var(--navy); margin-bottom: 16px; }
+    .card h3 { font-size: 1.14rem; margin-bottom: 7px; }
+    .card p { font-size: .96rem; color: var(--muted); margin: 0; }
+    .card--cta { display: flex; flex-direction: column; justify-content: center; background: var(--navy); border-color: var(--navy); }
+    .card--cta h3 { color: #fff; }
+    .card--cta p { color: #b9c6d8; }
+    .card--cta .btn { margin-top: 16px; align-self: flex-start; }
+
+    /* ============================================================== */
+    /* 6 · SAMPLE FINDINGS                                            */
+    /* ============================================================== */
+    .findings-grid { display: grid; grid-template-columns: 300px 1fr; gap: 40px; align-items: start; }
+    .score-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; text-align: center; box-shadow: var(--shadow-sm); }
+    .gauge { position: relative; width: 180px; height: 180px; margin: 0 auto 16px; }
+    .gauge svg { transform: rotate(-90deg); }
+    .gauge__track { fill: none; stroke: var(--border); stroke-width: 14; }
+    .gauge__fill  { fill: none; stroke: var(--red); stroke-width: 14; stroke-linecap: round; transition: stroke-dashoffset 1.2s ease; }
+    .gauge__label { position: absolute; inset: 0; display: grid; place-content: center; }
+    .gauge__num { font-family: var(--font-display); font-weight: 700; font-size: 2.6rem; color: var(--navy); line-height: 1; }
+    .gauge__den { font-size: .85rem; color: var(--muted); }
+    .score-card .tag { display: inline-block; margin-top: 6px; padding: 4px 12px; border-radius: 999px; background: rgba(192,57,43,.1); color: var(--red); font-size: .82rem; font-weight: 600; }
+
+    .finding { display: flex; gap: 16px; padding: 20px 0; border-bottom: 1px solid var(--border); }
+    .finding:last-child { border-bottom: 0; }
+    .finding__sev { flex: none; font-size: .68rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 5px 10px; border-radius: 6px; height: fit-content; margin-top: 3px; }
+    .sev-high { background: rgba(192,57,43,.12); color: var(--red); }
+    .sev-med  { background: rgba(214,158,46,.16); color: #8a5712; }
+    .finding h4 { margin: 0 0 3px; font-size: 1.02rem; }
+    .finding p { margin: 0; font-size: .95rem; color: var(--muted); }
+    .finding p .fix { color: var(--text); font-weight: 500; }
+
+    /* ============================================================== */
+    /* 7 · PRICING + LEAD FORM                                        */
+    /* ============================================================== */
+    .pricing-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 40px; align-items: stretch; }
+    .price-card, .lead-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 36px; box-shadow: var(--shadow); }
+    .price-card .price { display: flex; align-items: baseline; gap: 8px; margin: 4px 0 6px; }
+    .price-card .amount { font-family: var(--font-display); font-weight: 700; font-size: 3.2rem; color: var(--navy); line-height: 1; }
+    .price-card .per { color: var(--muted); font-weight: 500; }
+    .includes { list-style: none; display: grid; gap: 12px; margin: 22px 0 0; }
+    .includes li { display: flex; gap: 11px; align-items: flex-start; font-size: .98rem; }
+    .includes .tick { flex: none; color: var(--red); margin-top: 2px; font-weight: 700; }
+
+    .lead-card h3 { font-size: 1.3rem; }
+    .field { display: grid; gap: 7px; margin-bottom: 16px; }
+    .field label { font-size: .9rem; font-weight: 600; color: var(--navy); }
+    .field input {
+      font-family: var(--font-body); font-size: 1rem; color: var(--text); width: 100%;
+      padding: 13px 15px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); background: #fff;
+      transition: border-color .15s, box-shadow .15s;
+    }
+    .field input:focus { outline: none; border-color: var(--navy); box-shadow: 0 0 0 3px rgba(31,58,95,.13); }
+    .field input.invalid { border-color: var(--red); }
+    .field .error { display: none; font-size: .82rem; color: var(--red); }
+    .field input.invalid ~ .error { display: block; }
+    .form-status { margin: 4px 0 14px; font-size: .92rem; font-weight: 500; color: var(--navy); min-height: 1.2em; }
+    .lead-note { display: flex; align-items: center; gap: 7px; margin: 14px 0 0; font-size: .85rem; color: var(--muted); }
+    /* Honeypot: hidden from real users, tempting to bots. Not display:none so bots still see it. */
+    .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+    /* ============================================================== */
+    /* 8 · FAQ (accordion)                                            */
+    /* ============================================================== */
+    .faq { max-width: 760px; margin: 0 auto; }
+    .faq__item { border-bottom: 1px solid var(--border); }
+    .faq__q {
+      width: 100%; text-align: left; background: none; border: 0; cursor: pointer;
+      font-family: var(--font-display); font-weight: 600; font-size: 1.08rem; color: var(--navy);
+      padding: 22px 0; display: flex; justify-content: space-between; align-items: center; gap: 16px;
+    }
+    .faq__q .chev { flex: none; transition: transform .25s ease; color: var(--red); }
+    .faq__q[aria-expanded="true"] .chev { transform: rotate(180deg); }
+    .faq__a { overflow: hidden; max-height: 0; transition: max-height .3s ease; }
+    .faq__a p { color: var(--muted); padding-bottom: 22px; margin: 0; }
+
+    /* ============================================================== */
+    /* 9 · FINAL CTA                                                  */
+    /* ============================================================== */
+    .final { text-align: center; }
+    .final h2 { font-size: clamp(1.9rem, 4.4vw, 2.7rem); max-width: 720px; margin: 0 auto 16px; }
+    .final p { color: #b9c6d8; font-size: 1.1rem; max-width: 560px; margin: 0 auto 28px; }
+
+    /* ============================================================== */
+    /* FOOTER                                                         */
+    /* ============================================================== */
+    .footer { background: var(--navy-deep); color: #9fb0c6; padding: 40px 0; }
+    .footer__inner { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; justify-content: space-between; }
+    .footer a { color: #cdd8e8; font-size: .92rem; }
+    .footer a:hover { color: #fff; }
+    .footer__links { display: flex; gap: 22px; list-style: none; }
+    .footer p { margin: 0; font-size: .88rem; }
+    .footer .logo__name { color: #fff; }
+    .footer .logo__name small { color: #8fa1ba; }
+
+    /* ============================================================== */
+    /* SCROLL REVEAL                                                  */
+    /* ============================================================== */
+    /* Content is VISIBLE by default. The fade-in only applies once app.js
+       confirms it can run and adds .js-anim to <html>. So if JS is blocked,
+       deferred or broken (e.g. Cloudflare Rocket Loader), content still shows. */
+    .reveal { opacity: 1; transform: none; }
+    .js-anim .reveal { opacity: 0; transform: translateY(22px); transition: opacity .6s ease, transform .6s ease; }
+    .js-anim .reveal.in { opacity: 1; transform: none; }
+
+    /* ============================================================== */
+    /* RESPONSIVE                                                     */
+    /* ============================================================== */
+    @media (max-width: 900px) {
+      .split, .pricing-grid { grid-template-columns: 1fr; gap: 36px; }
+      .cards { grid-template-columns: 1fr 1fr; }
+      .findings-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .section { padding: 60px 0; }
+      .cards { grid-template-columns: 1fr; }
+      .nav-toggle { display: block; }
+      .nav-links {
+        position: absolute; top: 74px; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0;
+        background: #fff; border-bottom: 1px solid var(--border); max-height: 0; overflow: hidden; transition: max-height .3s ease;
+      }
+      .nav-links.open { max-height: 380px; }
+      .nav-links li { border-top: 1px solid var(--border); }
+      .nav-links a:not(.btn) { display: block; padding: 16px 22px; }
+      .nav-links .btn { margin: 14px 22px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal, .js-anim .reveal { opacity: 1 !important; transform: none !important; transition: none; }
+      .gauge__fill { transition: none; }
+      * { transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+
+<body id="top">
+
+  <!-- ============================================================== -->
+  <!-- STICKY HEADER                                                  -->
+  <!-- ============================================================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <!-- LOGO: swap this SVG/markup for your real badge image if preferred -->
+      <a class="logo" href="#top" aria-label="Sleak Check Audit home">
+        <svg width="34" height="38" viewBox="0 0 34 38" aria-hidden="true">
+          <path d="M17 1 32 6v12c0 9-6.4 15.4-15 19C8.4 33.4 2 27 2 18V6L17 1Z" fill="#1F3A5F"/>
+          <rect x="8" y="16.5" width="18" height="4" rx="1" fill="#C0392B"/>
+          <path d="M11 25h12M11 11h12" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+        <span class="logo__name">Sleak Check<small>Security Audit</small></span>
+      </a>
+
+      <nav aria-label="Primary">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#what-you-get">What you get</a></li>
+          <li><a href="#sample">Sample report</a></li>
+          <li><a href="guides/index.html">Guides</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#pricing" class="btn btn--primary">Get my audit</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========================================================== -->
+    <!-- 1 · HERO                                                   -->
+    <!-- ========================================================== -->
+    <section class="hero">
+      <div class="container">
+        <span class="hero__badge">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linejoin="round"/></svg>
+          Plain-English website security audit
+        </span>
+
+        <h1>Your website might be exposed — <em>fix it before hackers find it</em></h1>
+        <p class="lede">Our website security and privacy audit scans your site for the vulnerabilities hackers look for, then shows exactly what's wrong and how to fix it — in plain English. No jargon, no scare tactics, just a clear report you can act on.</p>
+
+        <div class="hero__actions">
+          <a href="#pricing" class="btn btn--primary btn--lg">Get my security audit</a>
+          <a href="sample-report.html" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">See sample report</a>
+        </div>
+
+        <p class="hero__meta">$300 one-time · Delivered in <strong>24–48 hours</strong> · No technical knowledge needed</p>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- 2 · TRUST BAR (replace with real client/partner logos)     -->
+    <!-- ========================================================== -->
+    <section class="trust">
+      <div class="container">
+        <p>What every audit promises</p>
+        <div class="trust__logos">
+          <span class="trust__logo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>Non-intrusive scan</span>
+          <span class="trust__logo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>Plain-English report</span>
+          <span class="trust__logo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>24–48 hour delivery</span>
+          <span class="trust__logo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>One-time payment</span>
+          <span class="trust__logo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>Secure Stripe checkout</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- REAL TESTIMONIALS GO HERE (currently hidden).                  -->
+    <!-- Do NOT invent quotes — advertising rules (FTC / ASA) prohibit  -->
+    <!-- fabricated endorsements. Once you have genuine, permissioned   -->
+    <!-- reviews, delete this comment wrapper to make the section live. -->
+    <!--
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="head reveal">
+          <span class="eyebrow">In their words</span>
+          <h2>What clients say</h2>
+        </div>
+        <div class="cards">
+          <blockquote class="card reveal">
+            <p style="color:var(--text);">"Real quote from a real client goes here."</p>
+            <p style="margin:0; color:var(--muted); font-size:.9rem;"><strong>Client name</strong> · Company</p>
+          </blockquote>
+          [ copy the blockquote above for each additional review ]
+        </div>
+      </div>
+    </section>
+    -->
+
+
+    <!-- ========================================================== -->
+    <!-- 3 · PROBLEM                                                -->
+    <!-- ========================================================== -->
+    <section class="section">
+      <div class="container split">
+        <div class="reveal">
+          <span class="eyebrow">The problem</span>
+          <h2>Small websites are the easy target</h2>
+          <p>Most attacks aren't a hacker picking your business by name. They're automated bots scanning thousands of sites a day, looking for the same handful of weaknesses — and small sites rarely have anyone watching.</p>
+          <p>You don't need to be a big brand to be worth attacking. You just need a gap.</p>
+        </div>
+        <div class="reveal">
+          <ul class="risk-list">
+            <li><span class="dot" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z" stroke-linejoin="round"/></svg></span><span><strong>Data theft.</strong> Customer details, logins and payment info can be quietly skimmed for months.</span></li>
+            <li><span class="dot" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 21s-7-4.3-7-10a7 7 0 0 1 14 0c0 5.7-7 10-7 10Z" stroke-linejoin="round"/></svg></span><span><strong>Lost trust.</strong> A defaced page or a "this site may be hacked" warning sends customers straight to a competitor.</span></li>
+            <li><span class="dot" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14" stroke-linejoin="round"/></svg></span><span><strong>Privacy fines.</strong> A data breach can trigger reporting duties — and heavy penalties — under data-protection laws like GDPR and CCPA.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- 4 · SOLUTION                                               -->
+    <!-- ========================================================== -->
+    <section class="section section--surface solution">
+      <div class="container split">
+        <div class="reveal">
+          <ul class="risk-list">
+            <li><span class="dot" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>We do the scanning.</strong> You send your web address — we handle the technical checks.</span></li>
+            <li><span class="dot" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>We translate the results.</strong> Every issue is explained in plain English, with why it matters to your business.</span></li>
+            <li><span class="dot" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>You get a fix list.</strong> Hand the developer checklist to whoever built your site — or keep it for next time.</span></li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <span class="eyebrow">The solution</span>
+          <h2>A website security audit anyone can understand</h2>
+          <p>Sleak Check Audit is a one-time review of your website's security and privacy setup. We look at how your site is configured, where it leaks data, and where it leaves the door open — then we tell you what to do about it.</p>
+          <p>No dashboards to learn. No subscription. No technical knowledge required. Just a clear report and a checklist, delivered to your inbox in 24–48 hours.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- 5 · FEATURES / WHAT YOU GET                                -->
+    <!-- ========================================================== -->
+    <section class="section" id="what-you-get">
+      <div class="container">
+        <div class="head reveal">
+          <span class="eyebrow">What you get</span>
+          <h2>What's inside your website security report</h2>
+          <p>Five clear sections — written for business owners, useful for developers.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke-linejoin="round"/><path d="M14 2v6h6M8 13h8M8 17h6" stroke-linecap="round"/></svg></div>
+            <h3>Executive summary</h3>
+            <p>A one-page overview of where you stand and what matters most — no scrolling through pages of code.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3" stroke-linecap="round"/></svg></div>
+            <h3>Vulnerabilities explained</h3>
+            <p>Each weakness in plain English: what it is, how an attacker could use it, and how serious it really is.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" stroke-linejoin="round"/></svg></div>
+            <h3>Privacy &amp; GDPR check</h3>
+            <p>Where your site may be mishandling visitor data, cookies or tracking — and the privacy gaps that carry real risk.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3 8-8" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" stroke-linecap="round"/></svg></div>
+            <h3>Developer fix checklist</h3>
+            <p>A prioritised, copy-and-send list your developer can action straight away — no back-and-forth needed.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 1 18 0" stroke-linecap="round"/><path d="M12 12l4-3" stroke-linecap="round"/></svg></div>
+            <h3>Security score</h3>
+            <p>A single 0–100 score so you can see your starting point — and prove the improvement after fixes.</p>
+          </article>
+          <article class="card card--cta reveal">
+            <h3>Ready in 24–48 hours</h3>
+            <p>Delivered straight to your inbox as a clean PDF. One payment, no subscription.</p>
+            <a href="#pricing" class="btn btn--light">Start my audit</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- 6 · SAMPLE FINDINGS                                        -->
+    <!-- ========================================================== -->
+    <section class="section section--surface" id="sample">
+      <div class="container">
+        <div class="head reveal">
+          <span class="eyebrow">Sample report</span>
+          <h2>What a finding actually looks like</h2>
+          <p>Here's a sample of the kind of issues we catch — and how we explain them.</p>
+        </div>
+
+        <div class="findings-grid">
+          <!-- Security score gauge -->
+          <div class="score-card reveal">
+            <div class="gauge">
+              <svg width="180" height="180" viewBox="0 0 180 180">
+                <circle class="gauge__track" cx="90" cy="90" r="78"></circle>
+                <circle class="gauge__fill" id="gaugeFill" cx="90" cy="90" r="78" stroke-dasharray="490" stroke-dashoffset="186"></circle>
+              </svg>
+              <div class="gauge__label">
+                <span class="gauge__num" id="gaugeNum">62</span>
+                <span class="gauge__den">/ 100</span>
+              </div>
+            </div>
+            <span class="tag">Needs attention</span>
+            <p style="margin:14px 0 0; font-size:.9rem; color:var(--muted);">Example score for a typical small-business site before fixes.</p>
+          </div>
+
+          <!-- Findings list -->
+          <div class="reveal">
+            <div class="finding">
+              <span class="finding__sev sev-high">High</span>
+              <div>
+                <h4>No Content Security Policy (CSP)</h4>
+                <p>Your site doesn't tell browsers which scripts are allowed to run, so an attacker who slips code in could quietly steal data from your visitors. <span class="fix">Fix: add a Content-Security-Policy header that restricts scripts to trusted sources.</span></p>
+              </div>
+            </div>
+            <div class="finding">
+              <span class="finding__sev sev-med">Medium</span>
+              <div>
+                <h4>Third-party scripts aren't verified (no SRI)</h4>
+                <p>You load scripts from other companies without checking they haven't been tampered with — if one is hijacked, your site loads the hacked version too. <span class="fix">Fix: add Subresource Integrity hashes to external scripts.</span></p>
+              </div>
+            </div>
+            <div class="finding">
+              <span class="finding__sev sev-med">Medium</span>
+              <div>
+                <h4>Weak HTTPS enforcement (HSTS)</h4>
+                <p>Visitors can be quietly downgraded to an insecure connection, exposing logins and payment details to anyone watching the network. <span class="fix">Fix: send a Strict-Transport-Security header with a long max-age.</span></p>
+              </div>
+            </div>
+            <div class="finding">
+              <span class="finding__sev sev-med">Medium</span>
+              <div>
+                <h4>Missing Referrer Policy</h4>
+                <p>Your pages may leak private web addresses and customer information to other sites your visitors click through to. <span class="fix">Fix: set a Referrer-Policy header such as strict-origin-when-cross-origin.</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- 6b · WHO RUNS YOUR AUDIT (credibility)                      -->
+    <!-- EDIT: replace the name, bio and credentials with real ones. -->
+    <!-- Only list certifications you actually hold.                 -->
+    <!-- ========================================================== -->
+    <section class="section" id="about">
+      <div class="container split">
+        <div class="reveal">
+          <span class="eyebrow">Who runs your audit</span>
+          <h2>A real person reviews every site — not just a scanner</h2>
+          <p>Every audit is run and checked by hand — by a real security specialist, not just an automated scanner.</p>
+          <p>So you get context and priorities in plain English, and know exactly what to fix first.</p>
+        </div>
+        <div class="reveal">
+          <ul class="risk-list">
+            <li><span class="dot" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>ISC2 Certified in Cybersecurity (CC)</strong>, plus EC-Council CodeRed training in Digital Forensics Essentials, Ethical Hacking Essentials, and Passive Reconnaissance.</span></li>
+            <li><span class="dot" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Hand-checked results</strong> — findings are verified and prioritised by a person, not just auto-generated.</span></li>
+            <li><span class="dot" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Direct contact</strong> — reply to any report and reach the person who wrote it.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- 7 · PRICING + LEAD CAPTURE FORM                            -->
+    <!-- ========================================================== -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="head reveal">
+          <span class="eyebrow">Pricing</span>
+          <h2>One audit. One price. No surprises.</h2>
+          <p>Everything above, delivered in 24–48 hours, for a single payment.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Value / price card -->
+          <div class="price-card reveal">
+            <span class="eyebrow">Website Security &amp; Privacy Audit</span>
+            <div class="price">
+              <span class="amount">$300</span>
+              <span class="per">one-time</span>
+            </div>
+            <p style="color:var(--muted); margin:0;">No subscription. No hidden extras. Pay once, get your full report.</p>
+            <ul class="includes">
+              <li><span class="tick" aria-hidden="true">✓</span> Plain-English executive summary</li>
+              <li><span class="tick" aria-hidden="true">✓</span> Every vulnerability explained &amp; rated</li>
+              <li><span class="tick" aria-hidden="true">✓</span> Privacy &amp; GDPR risk check</li>
+              <li><span class="tick" aria-hidden="true">✓</span> Prioritised developer fix checklist</li>
+              <li><span class="tick" aria-hidden="true">✓</span> Overall security score (0–100)</li>
+              <li><span class="tick" aria-hidden="true">✓</span> Delivered as a clean PDF in 24–48 hrs</li>
+            </ul>
+            <!-- GUARANTEE: confirm the terms you're willing to honour before publishing. -->
+            <div class="guarantee">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span><strong>14-day money-back guarantee.</strong> If the report isn't useful, email us for a full refund.</span>
+            </div>
+          </div>
+
+          <!-- Lead capture + checkout -->
+          <div class="lead-card reveal">
+            <h3>Start your audit</h3>
+            <p style="color:var(--muted); margin-bottom:22px;">Tell us where to look and where to send your report.</p>
+
+            <!-- novalidate: we run our own JS validation for friendlier messages -->
+            <form id="auditForm" novalidate>
+              <div class="field">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" autocomplete="name" placeholder="Jane Smith" required aria-describedby="name-error" aria-invalid="false" />
+                <span class="error" id="name-error">Please enter your name.</span>
+              </div>
+              <div class="field">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" autocomplete="email" placeholder="jane@yourbusiness.co.uk" required aria-describedby="email-error" aria-invalid="false" />
+                <span class="error" id="email-error">Please enter a valid email address.</span>
+              </div>
+              <div class="field">
+                <label for="website">Website URL</label>
+                <input type="url" id="website" name="website" inputmode="url" placeholder="https://yourbusiness.co.uk" required aria-describedby="website-error" aria-invalid="false" />
+                <span class="error" id="website-error">Please enter a valid website address.</span>
+              </div>
+
+              <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+
+              <!-- Honeypot anti-bot field. Real users never see or fill this. -->
+              <div class="hp" aria-hidden="true">
+                <label for="company_url">Company URL (leave blank)</label>
+                <input type="text" id="company_url" name="company_url" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <!-- This button validates → stores the lead → opens Stripe Checkout -->
+              <button type="submit" class="btn btn--primary btn--lg btn--block" id="payBtn">
+                Start my audit · $300
+              </button>
+
+              <p class="lead-note">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4" stroke-linecap="round"/></svg>
+                Secure payment by Stripe. We never see your card details.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- 8 · FAQ                                                    -->
+    <!-- ========================================================== -->
+    <section class="section section--surface" id="faq">
+      <div class="container">
+        <div class="head reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Questions, answered</h2>
+        </div>
+
+        <div class="faq reveal">
+          <!-- To add a question, copy one .faq__item block -->
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">What is a website security audit?
+              <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq__a"><p>A website security audit is a check of how your site is set up — its security headers, HTTPS configuration, privacy and GDPR settings, and the common vulnerabilities attackers look for. We run the checks for you, then explain what we found in plain English, rate it by severity, and give you a fix checklist.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">How do I know if my website is secure?
+              <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq__a"><p>Usually you can't tell from the outside. Issues like a missing Content Security Policy, weak HTTPS or a GDPR privacy gap are invisible to normal visitors but easy for automated bots to find. A security audit surfaces them and gives you a 0–100 score, so you're working from facts instead of guesswork.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Do I need any technical knowledge?
+              <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq__a"><p>None at all. The report is written for business owners — every issue is explained in plain English. There's also a separate checklist you can hand straight to your developer if you have one.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">How long does it take?
+              <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq__a"><p>Your full report lands in your inbox within 24–48 hours of payment. If anything will take longer, we'll email you straight away.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Will the scan affect my live website?
+              <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq__a"><p>No. Our checks are non-intrusive and run from the outside, the same way a normal visitor's browser sees your site. Nothing is changed, slowed down or taken offline.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Is this really a one-time payment?
+              <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq__a"><p>Yes — $300, paid once. There's no subscription and no auto-renewal. If you'd like ongoing monitoring later we'll mention it, but you're never signed up to anything automatically.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">What if my site turns out to be fine?
+              <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq__a"><p>Then you get a clean report and a high security score in writing — useful reassurance for you, and proof you can show customers or partners. Either way, you'll know exactly where you stand.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- 8b · RESOURCES / GUIDES (internal linking + topical authority) -->
+    <!-- ========================================================== -->
+    <section class="section" id="resources">
+      <div class="container">
+        <div class="head reveal">
+          <span class="eyebrow">Guides &amp; resources</span>
+          <h2>Learn how website security actually works</h2>
+          <p>Plain-English guides to the checks in your audit — free to read, no sign-up.</p>
+        </div>
+        <div class="cards">
+          <a class="card reveal" href="guides/website-security-checklist.html" style="text-decoration:none;">
+            <div class="card__icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3 8-8" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" stroke-linecap="round"/></svg></div>
+            <h3>Website security checklist</h3>
+            <p>The essential checks every small-business site should pass.</p>
+          </a>
+          <a class="card reveal" href="guides/content-security-policy.html" style="text-decoration:none;">
+            <div class="card__icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" stroke-linejoin="round"/></svg></div>
+            <h3>What is a CSP?</h3>
+            <p>The header that stops injected scripts — and how to add it.</p>
+          </a>
+          <a class="card reveal" href="guides/website-gdpr-compliance.html" style="text-decoration:none;">
+            <div class="card__icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V5l-8-3Z" stroke-linejoin="round"/></svg></div>
+            <h3>GDPR &amp; privacy basics</h3>
+            <p>Cookies, consent and the privacy gaps that carry real risk.</p>
+          </a>
+        </div>
+        <p style="text-align:center; margin-top:26px;"><a href="guides/index.html" style="font-weight:600;">Browse all guides →</a></p>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- 9 · FINAL CTA                                              -->
+    <!-- ========================================================== -->
+    <section class="section section--navy final">
+      <div class="container">
+        <span class="eyebrow">Don't wait for a breach</span>
+        <h2>Find out what's exposed — before someone else does</h2>
+        <p>One scan. One clear report. One simple price. Know exactly where your website stands in the next 48 hours.</p>
+        <a href="#pricing" class="btn btn--primary btn--lg">Get my security audit · $300</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================== -->
+  <!-- FOOTER                                                         -->
+  <!-- ============================================================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="logo">
+        <svg width="30" height="34" viewBox="0 0 34 38" aria-hidden="true">
+          <path d="M17 1 32 6v12c0 9-6.4 15.4-15 19C8.4 33.4 2 27 2 18V6L17 1Z" fill="#33507a"/>
+          <rect x="8" y="16.5" width="18" height="4" rx="1" fill="#C0392B"/>
+          <path d="M11 25h12M11 11h12" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+        <span class="logo__name">Sleak Check<small>Security Audit</small></span>
+      </span>
+      <ul class="footer__links">
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="guides/index.html">Guides</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="refund.html">Refunds</a></li>
+        <li><a href="mailto:support@sleakcheckaudit.co.uk">Contact</a></li>
+      </ul>
+      <p>© <span id="year"></span> Sleak Check Audit. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ============================================================== -->
+  <!-- JAVASCRIPT                                                     -->
+  <!-- ============================================================== -->
+  <script data-cfasync="false" src="app.js"></script>
+</body>
+</html>

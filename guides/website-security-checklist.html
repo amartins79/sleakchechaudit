@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QV98MCD0NX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QV98MCD0NX');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Security Checklist for Small Businesses (2026) | Sleak Check</title>
+  <meta name="description" content="A plain-English website security checklist for small businesses: HTTPS, HSTS, security headers, updates, backups, 2FA and more — with how to check each one." />
+  <link rel="canonical" href="https://sleakcheckaudit.co.uk/guides/website-security-checklist.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="The Small-Business Website Security Checklist" />
+  <meta property="og:description" content="The essential website security checks every small-business site should pass — in plain English." />
+  <meta property="og:url" content="https://sleakcheckaudit.co.uk/guides/website-security-checklist.html" />
+  <meta property="og:image" content="https://sleakcheckaudit.co.uk/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="guides.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 38'%3E%3Cpath d='M17 1 32 6v12c0 9-6.4 15.4-15 19C8.4 33.4 2 27 2 18V6L17 1Z' fill='%231F3A5F'/%3E%3Crect x='8' y='16.5' width='18' height='4' rx='1' fill='%23C0392B'/%3E%3C/svg%3E" />
+
+  <!-- EDIT: replace author name + credentials below AND in this schema with a real person. -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TechArticle",
+    "headline":"The Small-Business Website Security Checklist",
+    "description":"A plain-English website security checklist for small businesses: HTTPS, HSTS, security headers, updates, backups, 2FA and more.",
+    "image":"https://sleakcheckaudit.co.uk/og-image.png",
+    "author":{"@type":"Person","name":"[AUTHOR NAME]","jobTitle":"[JOB TITLE / CREDENTIALS]"},
+    "publisher":{"@type":"Organization","name":"Sleak Check Audit","url":"https://sleakcheckaudit.co.uk/"},
+    "datePublished":"[YYYY-MM-DD]",
+    "dateModified":"[YYYY-MM-DD]",
+    "mainEntityOfPage":"https://sleakcheckaudit.co.uk/guides/website-security-checklist.html"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://sleakcheckaudit.co.uk/"},
+      {"@type":"ListItem","position":2,"name":"Guides","item":"https://sleakcheckaudit.co.uk/guides/"},
+      {"@type":"ListItem","position":3,"name":"Website security checklist","item":"https://sleakcheckaudit.co.uk/guides/website-security-checklist.html"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"How do I check if my website is secure?","acceptedAnswer":{"@type":"Answer","text":"Check that your site loads over HTTPS with a valid certificate, that it sends security headers (like Content-Security-Policy and Strict-Transport-Security), that your CMS and plugins are up to date, and that admin accounts use strong passwords and two-factor authentication. A security audit checks all of this for you and scores it."}},
+      {"@type":"Question","name":"How often should I audit my website security?","acceptedAnswer":{"@type":"Answer","text":"At least once a year, and again after any major change — a redesign, a new plugin or integration, or a platform migration. High-traffic or e-commerce sites benefit from more frequent checks."}},
+      {"@type":"Question","name":"Can a small business website really be hacked?","acceptedAnswer":{"@type":"Answer","text":"Yes. Most attacks are automated bots scanning thousands of sites for the same common weaknesses, so size is irrelevant — an unpatched plugin or a missing security header is enough."}},
+      {"@type":"Question","name":"How much does a website security audit cost?","acceptedAnswer":{"@type":"Answer","text":"It varies widely. Enterprise penetration tests run into thousands. A focused small-business audit like Sleak Check Audit is a one-time $300 and returns a plain-English report in 24–48 hours."}}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="../index.html"><svg width="26" height="29" viewBox="0 0 34 38" aria-hidden="true"><path d="M17 1 32 6v12c0 9-6.4 15.4-15 19C8.4 33.4 2 27 2 18V6L17 1Z" fill="#1F3A5F"/><rect x="8" y="16.5" width="18" height="4" rx="1" fill="#C0392B"/></svg> Sleak <span>Check</span></a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Guides</a>
+        <a href="../index.html#faq">FAQ</a>
+        <a href="../index.html#pricing" class="btn">Get my audit</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-lite">
+    <div class="wrap">
+      <p class="breadcrumbs"><a href="../index.html">Home</a> › <a href="index.html">Guides</a> › Website security checklist</p>
+      <span class="eyebrow">Guide · Start here</span>
+      <h1>The small-business website security checklist</h1>
+    </div>
+  </section>
+
+  <main>
+    <article class="article wrap">
+      <p class="lead">If you run a small business website, you don't need to become a security expert — but you do need to make sure a handful of standard protections are switched on. This checklist covers the ones that matter most, why they matter, and how to check each.</p>
+
+      <!-- EDIT: replace with a real author + real credentials. Do not invent qualifications. -->
+      <div class="byline">
+        <span class="avatar" aria-hidden="true"></span>
+        <span class="who">Written by <strong>[AUTHOR NAME]</strong>, [JOB TITLE / CREDENTIALS] · Last reviewed <strong>[DATE]</strong></span>
+      </div>
+
+      <div class="callout edit">⚠ Placeholder byline. Replace the author name, credentials and dates above (and in this page's schema) with a real, qualified person before publishing — this is what earns Google's trust and yours.</div>
+
+      <div class="tldr"><strong>In short:</strong> serve everything over HTTPS, add the core security headers, keep software patched, lock down admin access with 2FA, take tested backups, and secure your cookies. Miss any of these and automated bots can usually find the gap.</div>
+
+
+              <nav class="toc" aria-label="In this guide">
+          <p class="toc__title">In this guide</p>
+          <ol>
+          <li><a href="#why-small-websites-get-attacked">Why small websites get attacked</a></li>
+          <li><a href="#the-checklist">The checklist</a></li>
+          <li><a href="#how-to-check-where-you-stand">How to check where you stand</a></li>
+          <li><a href="#people-also-ask">People also ask</a></li>
+          </ol>
+        </nav>
+
+
+
+      <h2 id="why-small-websites-get-attacked">Why small websites get attacked</h2>
+      <p>A common myth is that attackers hand-pick their targets. In reality, the vast majority of website compromises are opportunistic: automated tools crawl the web looking for known weaknesses — an outdated plugin, a missing header, a default password — and exploit whatever they find. Your site doesn't need to be valuable or well-known to be worth attacking. It just needs a gap. That's good news, because it means a short list of standard fixes closes most of the risk.</p>
+
+      <h2 id="the-checklist">The checklist</h2>
+
+      <h3>1. Serve everything over HTTPS</h3>
+      <p>Every page — not just the checkout — should load over HTTPS with a valid TLS certificate, and plain HTTP requests should redirect to HTTPS. Without this, data between your visitors and your site can be read or altered on untrusted networks. Most hosts and platforms offer free certificates (via Let's Encrypt) that renew automatically.</p>
+
+      <h3>2. Enforce HTTPS with HSTS</h3>
+      <p>A redirect alone can still be bypassed on a visitor's very first request. The <code>Strict-Transport-Security</code> (HSTS) header tells browsers to only ever connect to your site securely. Start with a modest <code>max-age</code>, confirm nothing breaks, then increase it.</p>
+
+      <h3>3. Add the core security headers</h3>
+      <p>A few response headers dramatically reduce common attacks:</p>
+      <ul>
+        <li><strong>Content-Security-Policy</strong> — controls which scripts can run, the main defence against injected code. See our <a href="content-security-policy.html">CSP guide</a>.</li>
+        <li><strong>X-Content-Type-Options: nosniff</strong> — stops browsers guessing file types.</li>
+        <li><strong>Referrer-Policy</strong> — prevents leaking private URLs to other sites (e.g. <code>strict-origin-when-cross-origin</code>).</li>
+        <li><strong>X-Frame-Options / frame-ancestors</strong> — stops your pages being embedded in a malicious frame (clickjacking).</li>
+        <li><strong>Permissions-Policy</strong> — switches off browser features (camera, geolocation) you don't use.</li>
+      </ul>
+
+      <h3>4. Verify third-party scripts (SRI)</h3>
+      <p>If you load scripts from other companies (analytics, fonts, widgets), add Subresource Integrity hashes so the browser refuses a tampered version. A compromised third-party script is one of the most common ways otherwise-secure sites leak customer data.</p>
+
+      <h3>5. Keep everything updated</h3>
+      <p>Outdated CMS cores, themes, plugins and libraries are the number-one route in. Turn on automatic updates where you can, remove anything you're not using, and stick to actively maintained plugins.</p>
+
+      <h3>6. Lock down admin access</h3>
+      <p>Use unique, strong passwords, enable two-factor authentication on every admin account, limit failed login attempts, and remove old accounts for people who've left. Never share a single admin login.</p>
+
+      <h3>7. Take backups you've actually tested</h3>
+      <p>Automated, off-site backups let you recover quickly from a compromise or mistake. Crucially, test a restore occasionally — an untested backup isn't a backup.</p>
+
+      <h3>8. Secure your cookies</h3>
+      <p>Session and login cookies should carry the <code>Secure</code>, <code>HttpOnly</code> and an appropriate <code>SameSite</code> attribute so they can't be stolen over insecure connections or misused across sites.</p>
+
+      <h3>9. Handle personal data properly</h3>
+      <p>Security and privacy overlap. If you collect names, emails or payment details, you have legal duties around how that data is stored, shared and consented to. Our <a href="website-gdpr-compliance.html">GDPR &amp; privacy basics</a> guide covers the essentials.</p>
+
+      <h2 id="how-to-check-where-you-stand">How to check where you stand</h2>
+      <p>You can inspect many of these yourself using your browser's developer tools and free header-checking tools. But the results are only useful if you know how to read them and which gaps actually matter for your business. That interpretation — turning a raw list of missing headers into a prioritised, plain-English action plan — is exactly what a security audit provides.</p>
+
+      <div class="paa">
+        <h2 id="people-also-ask">People also ask</h2>
+        <details><summary>How do I check if my website is secure?</summary><p>Confirm your site loads over HTTPS with a valid certificate, sends the core security headers, runs up-to-date software, and protects admin logins with strong passwords and two-factor authentication. A security audit checks all of this and gives you a single 0–100 score.</p></details>
+        <details><summary>How often should I audit my website security?</summary><p>At least once a year, and again after any major change — a redesign, a new plugin or integration, or a migration. Busier and e-commerce sites benefit from checking more often.</p></details>
+        <details><summary>Can a small business website really be hacked?</summary><p>Yes. Most attacks are automated bots scanning for common weaknesses, so being small is no protection — one unpatched plugin or missing header can be enough.</p></details>
+        <details><summary>How much does a website security audit cost?</summary><p>It ranges from free self-checks to multi-thousand-dollar enterprise penetration tests. A focused small-business audit like Sleak Check Audit is a one-time $300 with a plain-English report in 24–48 hours.</p></details>
+      </div>
+
+      <div class="related">
+        <h2 id="keep-reading">Keep reading</h2>
+        <ul>
+          <li><a href="content-security-policy.html">What is a Content Security Policy (CSP)?</a></li>
+          <li><a href="website-gdpr-compliance.html">Website GDPR &amp; privacy compliance basics</a></li>
+          <li><a href="website-security-audit-cost.html">How much does a website security audit cost?</a></li>
+          <li><a href="../index.html#sample">See a sample audit report</a></li>
+        </ul>
+      </div>
+
+      <div class="cta">
+        <h2 id="don-t-want-to-work-through-this-alone">Don't want to work through this alone?</h2>
+        <p>We'll check every item on this list and send you a prioritised, plain-English report in 24–48 hours.</p>
+        <a class="btn" href="../index.html#pricing">Get my security audit · $300</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <span class="brand" style="color:#fff">Sleak <span style="color:#ff8a7a">Check</span></span>
+      <ul class="links">
+        <li><a href="index.html">Guides</a></li>
+        <li><a href="../index.html#pricing">Pricing</a></li>
+        <li><a href="../privacy.html">Privacy</a></li>
+        <li><a href="../terms.html">Terms</a></li>
+      </ul>
+      <p>© <span id="y"></span> Sleak Check Audit</p>
+    </div>
+  </footer>
+  <script data-cfasync="false" src="guides.js"></script>
+</body>
+</html>
